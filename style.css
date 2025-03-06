@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Menu Container */
+.menu-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(143, 133, 133, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-image: url(167-profile_PNhj8F.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Category Layout */
+.category {
+    width: 100%; /* Full width for small screens */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.category h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+}
+
+.item {
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Hover Effect */
+.item:hover {
+    transform: translateX(10px);
+    background: #e9ecef;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #d8d2d2;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Logo Adjustments */
+.logo {
+    height: 100px; /* Reduce size for mobile */
+    max-width: 100%;
+}
+
+/* Company Name */
+.company-name p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Footer Links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ***** MOBILE VIEW STYLES ***** */
+@media (max-width: 768px) {
+    /* Adjust Menu Container */
+    .menu-container {
+        padding: 15px;
+        height: auto;
+    }
+
+    /* Stack header items */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Position logos on left and right */
+    header .logo:first-child {
+        position: absolute;
+        left: 10px;
+    }
+    header .logo:last-child {
+        position: absolute;
+        right: 10px;
+    }
+
+    /* Center company name */
+    .company-name {
+        width: 100%;
+        text-align: center;
+    }
+
+    .company-name p {
+        font-size: 18px;
+    }
+
+    /* Display categories with flex (Appetizers on left, Main Courses on right) */
+    .category {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Adjust category title */
+    .category h3 {
+        font-size: 1.5em;
+    }
+
+    /* Adjust menu items */
+    .item {
+        font-size: 16px;
+    }
+
+    /* Footer Margin */
+    footer {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .menu-container {
+        padding: 10px;
+    }
+
+    .category h3 {
+        font-size: 1.3em;
+    }
+
+    .item {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .company-name p {
+        font-size: 16px;
+    }
+
+    /* Stack categories in mobile view */
+    .category {
+        display: block;
+    }
+}
